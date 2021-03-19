@@ -2,17 +2,13 @@
 # -*- coding: utf-8 -*-
 import cgi
 import requests
-import pprint
 
-# 認証用ID指定
-CLIENT_ID = 'spotify api client key here'
-CLIENT_SECRET = 'spotify api client seacret key here'
+CLIENT_ID = ''
+CLIENT_SECRET = ''
 
-# api接続初期設定
 GRANT_TYPE = 'client_credentials'
 TOKEN_URL = 'https://accounts.spotify.com/api/token'
 
-# 初回認証
 body_params = {'grant_type': GRANT_TYPE}
 auth = requests.post(TOKEN_URL, data=body_params, auth=(CLIENT_ID, CLIENT_SECRET)).json()
 header_params = {'Authorization': 'Bearer {}'.format(auth['access_token'])}
@@ -68,11 +64,6 @@ for current_artist_key in artist_key:
         </div> 
     '''% (current_artist_key, artist_image, artist_name)
 
-    # html_image = '<img class=\"grid-item\" src=\"' + artist_image + '\" alt=\"' + artist_name + ' biography\">'
-    # html_caption = '<div class=\"caption\"><h2>' + artist_name + '</h2></div>'
-
-    # html_grid_item = '<div class=\"artist-effect\">\n' + html_image + '\n<div class=\"mask\">\n' + html_caption + '\n</div>\n' + '</div>\n'
-    
     html_main_content += current_grid_content + '\n'
 
 content_1 = """

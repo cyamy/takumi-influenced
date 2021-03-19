@@ -2,13 +2,14 @@
 # -*- coding: utf-8 -*-
 import cgi
 import requests
-import pprint
 
 form = cgi.FieldStorage()
+key = form.getfirst('key')
+
 print('Content-Type: text/html; charset=UTF-8\n')
 
-CLIENT_ID = 'spotify api client key here'
-CLIENT_SECRET = 'spotify api client seacret key here'
+CLIENT_ID = ''
+CLIENT_SECRET = ''
 GRANT_TYPE = 'client_credentials'
 TOKEN_URL = 'https://accounts.spotify.com/api/token'
 body_params = {'grant_type': GRANT_TYPE}
@@ -31,24 +32,10 @@ genre_arry = res_artist.json()['genres']
 image = res_artist.json()['images'][0]['url']
 artist_url = res_artist.json()['external_urls']['spotify']
 
-# pprint.pprint(res_artist.json())
-
 toptrack_arry = []
 
 for i in range(3):
     toptrack_arry.append(res_toptrack.json()['tracks'][i]['name'])
-
-# print(image)
-# print('<br>')
-# print(name)
-# print('<br>')
-# print(genre_arry)
-# print('<br>')
-# print(toptrack_arry)
-# print('<br>')
-# print(artist_url)
-
-# pprint.pprint(res.json())
 
 html_text = '''
 <!DOCTYPE html>
