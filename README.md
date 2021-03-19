@@ -1,9 +1,18 @@
 # takumi-influenced
- twinkle riff, irregular time signature, and tapping. that has makes me.
+ 音楽を聴くのが大好きです．    
+ 
+ このサイトを見て，「これ好き！」「これが好きってことはあれも...?」「知らなかったけどいいね〜」
+ そんな風に思えたら教えてください.（もちろんプログラムのツッコミも待ってます）   
 
+ 一人で音楽を楽しむのも素敵だけど，
+ 誰かと共に楽しめた時はそりゃもう格別．   
+ 
+ あなたと一緒に音楽が聴きたいです．
+ 
  ## Demo
  [Takumi Influenced](http://160.251.80.238/cgi-bin/index.py)
 
  ## ToDo
 * sass/htmlのリファクタリング
 * 画面幅に応じたアーティスト名のフォントサイズ変更
+* 双方向性的なやりとりができる仕組みを考える
