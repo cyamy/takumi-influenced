@@ -1,0 +1,163 @@
+body {
+  font-family: "Source Code Pro", monospace;
+  background-color: #191919;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.grid {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 10vw 80vw 10vw;
+  grid-template-rows: 10vw 80vw 80vw 30vw;
+}
+@media screen and (min-width: 1000px) {
+  .grid {
+    grid-template-columns: 20vw 30vw 30vw 20vw;
+    grid-template-rows: 11vw 30vw 11vw;
+  }
+}
+.grid-image {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+@media screen and (min-width: 1000px) {
+  .grid-image {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+.grid-artist {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  width: 100%;
+  height: 100%;
+  padding: 2vw;
+}
+@media screen and (min-width: 1000px) {
+  .grid-artist {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+}
+.grid-artist-title {
+  font-size: 6vw;
+}
+@media screen and (min-width: 1000px) {
+  .grid-artist-title {
+    font-size: 2vw;
+  }
+}
+.grid-artist-genre-title, .grid-artist-toptracks {
+  font-size: 3vw;
+}
+@media screen and (min-width: 1000px) {
+  .grid-artist-genre-title, .grid-artist-toptracks {
+    font-size: 1vw;
+  }
+}
+.grid-artist-genre, .grid-artist-toptracks-list {
+  margin-left: 5vw;
+  font-size: 3vw;
+}
+@media screen and (min-width: 1000px) {
+  .grid-artist-genre, .grid-artist-toptracks-list {
+    margin-left: 2vw;
+    font-size: 1vw;
+  }
+}
+
+.bottun {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 4vw;
+  margin: 1em 0 0;
+  padding: 1.2em 1em;
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+  background: #1db954;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+@media screen and (min-width: 1000px) {
+  .bottun {
+    font-size: 1.2vw;
+    width: 20vw;
+    padding: 0.4em 1em;
+  }
+}
+
+.bottun:hover {
+  background: #28FA71;
+}
+
+.bottun-top {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 4vw;
+  margin: 1em 0 0;
+  padding: 1.2em 1em;
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+  background: #524C49;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+@media screen and (min-width: 1000px) {
+  .bottun-top {
+    font-size: 1.2vw;
+    width: 20vw;
+    padding: 0.4em 1em;
+  }
+}
+
+.bottun-top:hover {
+  background: #6E6662;
+}
+
+.footer {
+  width: 100vw;
+  height: 96px;
+  color: #fff;
+  background-color: #3D3937;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-title {
+  padding-left: 8vw;
+  font-size: 24px;
+}
+@media screen and (min-width: 600px) {
+  .footer-title {
+    padding-left: 0;
+  }
+}
+.footer-title a {
+  text-decoration: none;
+  color: #FFF;
+}
+.footer-copyright {
+  font-size: 16px;
+}
+/*# sourceMappingURL=artist.css.map */
