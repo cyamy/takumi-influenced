@@ -14,7 +14,7 @@
 
  ## ToDo
 * sass/htmlのリファクタリング
-* ~~画面幅に応じたアーティスト名のフォントサイズ変更~~
-    * https://codepen.io/cyamy/pen/LYbwXQM
+* ~~画面幅に応じたアーティスト名のフォントサイズ変更~~ 
     * 実装済み
+    * https://codepen.io/cyamy/pen/LYbwXQM
 * 双方向性的なやりとりができる仕組みを考える
