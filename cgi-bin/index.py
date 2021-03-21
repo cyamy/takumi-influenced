@@ -1,4 +1,4 @@
-#!shebang here
+#!/opt/rh/rh-python38/root/usr/bin/python3
 # -*- coding: utf-8 -*-
 import cgi
 import requests
@@ -18,21 +18,33 @@ html_main_content = ""
 
 artist_key = [
     '5FwydyGVcsQllnM4xM6jw4', # american football
+    '1BfYXNfaB5HBwHn4gxnEQE', # algernon cadwallader
+    '5TUa95aB5Vu2CzwCnZd6t0', # ttng
+    '7663vNncj70kCkfsi5eMNf', # clever girl
     '5vfSFPrDPPBGExVLldEDOB', # enemies
+    '5aBQVxOq5pkoXaasI2VtOo', # carifornia wives
+    '0MkAzpDHUZpuDnWGUII4RN', # appleseed cast
     '5uvVjg5SwNjvNE4w7HlGJC', # vasudeva
     '15apg2MS107wZD0LvXnkMw', # tangled hair
-    '7663vNncj70kCkfsi5eMNf', # clever girl
+    '1QWXanjDvSWBabyj4uYwy3', # mountain for clouds
     '4GkcDsTHzavL8eDEsEaC1D', # last days of april
     '1FVOt1XlpnaCueBolWF92k', # floral
     '69SoLkfU8ctU5vxrvsA0FT', # closure.
+    '4PJbP0dXALttfo1PFPY1Pt', # owen
+    '1sUOIv1YrZ2WRmTg0GRi0V', # joie de vivre
     '05MlomiA9La0OiNIAGqECk', # delta sleep
+    '3N4eFtnZCCXfMs0hBQwujT', # mineral
     '6GAoXkyadLFOLLkZrHWlOR', # tide/edit
+    '3IaqcRr2teHDEqhRE5emu9', # empire! empire!
+    '5uDuKeTdnkTHdHIGrQWhOL', # mock orange
     '2PxyBZt0Dgp57wZUHkzKmW', # football etc
     '3qu0nHytyZet7JFUe2Afow', # via luna
+    '5kKhcEMSytHUQK1KOHfYxx', # sport
     '46iJ1VD4HKFnqjISGqlZkV', # covet
     '5luRIEhyaVB12mabNujZHx', # hikes 
     '7zRVN0utSt9TFWfGPTYOkQ', # Halfsleep
     '0rpKM0MniNkXM1SLSglYUZ', # toe
+    '6g7JH6zxP3JTfg7i8bZwbf', # band apart
     '2J2ulUwLz2ItsDwB5V4LxU', # stereo type
     '0nwTdEUuG7c1M3kR9CIIxm', # syroup16g
     '6VIUbb5oBJPnm2gcYMFBUR', # jyocho
@@ -43,6 +55,7 @@ artist_key = [
     '2DZe9zw4ZNgEFPA8vRMade' # 宇宙コンビニ
 ]
 
+count = 0
 for current_artist_key in artist_key:
     current_endpoint = ENDPOINT + current_artist_key
     res = requests.get(current_endpoint, headers=header_params)
@@ -57,13 +70,14 @@ for current_artist_key in artist_key:
                     <input type="hidden" name="key" value="%s" >
                     <input class="img-cover" type="image" src="%s" alt="send">
                     <div class="mask">        
-                        <div class="caption"><h2>%s</h2></div>
+                        <div class="caption artist-title-mod%s"><h2>%s</h2></div>
                     </div>
                 </form>
             </div>  
         </div> 
-    '''% (current_artist_key, artist_image, artist_name)
+    '''% (current_artist_key, artist_image, count, artist_name)
 
+    count += 1
     html_main_content += current_grid_content + '\n'
 
 content_1 = """
@@ -107,6 +121,8 @@ content_2 = """
 <p class="footer-copyright">© 2021 takumi kamihara</p>
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>
 """
