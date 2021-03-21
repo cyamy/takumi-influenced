@@ -31,7 +31,7 @@ artist_key = [
     '1FVOt1XlpnaCueBolWF92k', # floral
     '69SoLkfU8ctU5vxrvsA0FT', # closure.
     '4PJbP0dXALttfo1PFPY1Pt', # owen
-    '1sUOIv1YrZ2WRmTg0GRi0V', # joie de vivre
+    '3jOstUTkEu2JkjvRdBA5Gu', # weezer
     '05MlomiA9La0OiNIAGqECk', # delta sleep
     '3N4eFtnZCCXfMs0hBQwujT', # mineral
     '6GAoXkyadLFOLLkZrHWlOR', # tide/edit
