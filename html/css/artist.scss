@@ -91,6 +91,7 @@ body {
     color: #FFF;
     background: #1db954;
     transition: .4s;
+    transition-property: background;
     @include mq(lg){
         font-size: 1.2vw;
         width: 20vw;
@@ -114,6 +115,7 @@ body {
     color: #FFF;
     background: #524C49;
     transition: .4s;
+    transition-property: background;
     @include mq(lg){
         font-size: 1.2vw;
         width: 20vw;

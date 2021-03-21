@@ -91,6 +91,8 @@ input {
     outline: none;
     height: 46vw;
     width: 46vw;
+    object-fit: cover;
+    object-position: center center;
 }
 
 input[type="image"] {
