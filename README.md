@@ -14,7 +14,11 @@
 
  ## ToDo
 * sass/htmlのリファクタリング
+<<<<<<< HEAD
 * ~~画面幅に応じたアーティスト名のフォントサイズ変更~~ 
     * 実装済み
     * https://codepen.io/cyamy/pen/LYbwXQM
+=======
+* 画面幅に応じたアーティスト名のフォントサイズ変更
+>>>>>>> parent of 82b8591 (Update README.md)
 * 双方向性的なやりとりができる仕組みを考える
