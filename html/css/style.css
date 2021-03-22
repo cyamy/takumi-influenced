@@ -53,14 +53,14 @@ header img {
   display: grid;
   gap: 2vw;
   grid-template-columns: repeat(2, 46vw);
-  grid-template-rows: repeat(18, 46vw);
+  grid-template-rows: repeat(12, 46vw);
 }
 @media screen and (min-width: 600px) {
   .grid {
     width: 80vw;
     gap: 2vw;
     grid-template-columns: repeat(3, 26vw);
-    grid-template-rows: repeat(11, 26vw);
+    grid-template-rows: repeat(8, 26vw);
   }
 }
 @media screen and (min-width: 1000px) {
@@ -68,7 +68,7 @@ header img {
     width: 68vw;
     gap: 1vw;
     grid-template-columns: repeat(4, 16vw);
-    grid-template-rows: repeat(9, 16vw);
+    grid-template-rows: repeat(6, 16vw);
   }
 }
 .grid-item {

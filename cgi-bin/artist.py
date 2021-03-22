@@ -1,4 +1,4 @@
-#!/opt/rh/rh-python38/root/usr/bin/python3
+#!shebang here
 # -*- coding: utf-8 -*-
 import cgi
 import requests
@@ -28,7 +28,7 @@ res_artist = requests.get(artist_endpoint, headers=header_params)
 res_toptrack = requests.get(toptrack_endpoint, headers=header_params, params=country_params)
 
 name = res_artist.json()['name']
-genre_arry = res_artist.json()['genre']
+genre_arry = res_artist.json()['genres']
 image = res_artist.json()['images'][0]['url']
 artist_url = res_artist.json()['external_urls']['spotify']
 
