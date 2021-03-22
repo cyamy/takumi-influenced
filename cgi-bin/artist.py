@@ -28,7 +28,7 @@ res_artist = requests.get(artist_endpoint, headers=header_params)
 res_toptrack = requests.get(toptrack_endpoint, headers=header_params, params=country_params)
 
 name = res_artist.json()['name']
-genre_arry = res_artist.json()['genres']
+genre_arry = res_artist.json()['genre']
 image = res_artist.json()['images'][0]['url']
 artist_url = res_artist.json()['external_urls']['spotify']
 
@@ -57,7 +57,7 @@ html_text = '''
         <img class="grid-image" src="%s">
         <div class="grid-artist">
             <h1 class="grid-artist-title">%s</h1>
-            <h2 class="grid-artist-genre-title">Genre:</h2>
+            <h2 class="grid-artist-genre-title">Genres:</h2>
                 <ul class="grid-artist-genre">
                     <li>%s</li>
                 </ul>
