@@ -15,4 +15,6 @@
  ## ToDo
 * sass/htmlのリファクタリング
 * 画面幅に応じたアーティスト名のフォントサイズ変更
+    * https://codepen.io/cyamy/pen/LYbwXQM
+    * safariとかで10px以下にならずサイズが崩れる問題
 * 双方向性的なやりとりができる仕組みを考える
